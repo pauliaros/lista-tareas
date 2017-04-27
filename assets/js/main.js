@@ -1200,3 +1200,17 @@ var tarea = [
     "completed": false
   }
 ]
+ 	for (var i = 0; i < 10; i++) {
+	document.write("<div><li>Task: " +tarea[i].title + "<br></li></div>");
+}
+ 
+	
+
+function nuevaTarea(){
+	var input = document.getElementById("tarea");
+	var ctarea = document.getElementsByClassName("cont-tarea");
+
+	ctarea[0].innerHTML += "<li>"+input.value+"</li>";
+ 
+
+}
